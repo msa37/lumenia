@@ -9,7 +9,7 @@
     <meta name="description" content="Lumenia - Plateforme de partage de savoir, formations et communauté engagée. Découvrez des articles de qualité, des formations gratuites et rejoignez notre communauté." />
     <meta name="keywords" content="savoir, apprentissage, formations, communauté, articles, développement personnel, tech" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Lumenia" />
+    <meta name="author" content="ADIGUIDI Messan Salem" />
     <meta name="theme-color" content="#0066CC" />
     
     <!-- Open Graph / Facebook -->
@@ -58,6 +58,21 @@
     <script type="module" crossorigin src="assets/index-Dp1lUTIj.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-DE_7iXyx.css">
     <script src="__manus__/debug-collector.js" defer></script>
+  
+    <script>
+      // Scroll to top on page change
+      (function() {
+        var oldPushState = history.pushState;
+        history.pushState = function() {
+          oldPushState.apply(this, arguments);
+          window.scrollTo(0, 0);
+        };
+        window.addEventListener('popstate', function() {
+          window.scrollTo(0, 0);
+        });
+      })();
+    </script>
+
   </head>
 
   <body>
